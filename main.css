@@ -1,0 +1,21 @@
+html body {
+    width: 800px;
+    margin: auto;
+}
+header {
+    background-color: darkgrey;
+    align-items: center;
+    width: 60%;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid black;
+}
+.content {
+    background-color: darkgrey;
+    color: black;
+    margin: 20px;
+    width: 20px;
+    align-content: center;
+    width: auto;
+    border: 1px solid black;
+}
