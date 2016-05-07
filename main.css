@@ -1,6 +1,7 @@
 html, body {
     background-color: silver;
     margin: 0;
+    width: auto;
 }
 div#content {
     width: 100%;
@@ -27,7 +28,7 @@ img#logo {
     font-size: 30px; 
 } */
 nav { 
-    background-color: darkslategray;
+    background-color: lightslategrey;
     width: 100%;
     height: 40px;
     border: 1px solid black;
@@ -41,9 +42,8 @@ ul#topnav li {
     height: auto;
 }
 ul#topnav li a {
+    font: bold normal 23px/1.4 courier;
     color: black;
-    padding: 1.4vw auto;
-    font-size: 20px;
     text-decoration: none;    
 }
 ul#topnav li a:hover {
@@ -54,8 +54,6 @@ main {
     width: 80%;
     margin: auto;
     height: auto;
-    padding-top: -500px;
-
 }
 header h1 {
     text-align: center; 
@@ -69,7 +67,7 @@ article.post {
     /* border: 1px solid black; */
 }
 article.post p {
-    font: 14px verdana, sans-serif;
+    font: 14px tahoma; /* verdana, sans-serif; */
     padding-left: 15px;
     padding-right: 15px;
     line-height: 150%;
