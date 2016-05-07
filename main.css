@@ -1,21 +1,56 @@
-html body {
-    width: 800px;
+html, body {
+    width: 100%;
+    height: auto;
+}
+div#content {
+    width:90%;
+    background-color: #f0f0f0;
+    height: auto;
     margin: auto;
 }
 header {
-    background-color: darkgrey;
+    background-color: navy;
     align-items: center;
-    width: 60%;
-    padding: 20px;
-    margin: 20px;
-    border: 2px solid black;
+    width: auto;
+    resize: 60%;
 }
-.content {
-    background-color: darkgrey;
+#logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding-top: 20px;
+}
+header h1 {
+    text-align: center;
+}
+.post {
+    background-color: lightgrey;
     color: black;
     margin: 20px;
-    width: 20px;
-    align-content: center;
     width: auto;
     border: 1px solid black;
+}
+.post h1, p {
+margin: 20px;
+}
+.post p {
+    font: 15px tahoma, sans-serif;
+}
+.post img {
+    display:block;
+    width: 95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+hr.hrtb {
+    border: 0;height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+p.postfoot {
+    font-style: italic;
+}
+footer p {
+    font: italic small-caps bold 14px tahoma, sans-serif;
+    padding-bottom: 10px;
 }
