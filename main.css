@@ -1,25 +1,26 @@
-html {
+html, body {
     background-color: silver;
-    margin: auto
+    margin: 0;
 }
-#content {
+div#content {
     width: 100%;
     background-color: white;
     height: auto;
     margin: auto;
     padding: auto;
-}
+} 
 header {
     background-color: #7498ef;
     width: auto;
     padding: auto;;
     margin-top: -11px;
 }
-#logo {
+img#logo {
     display: inline-block;
-    margin-left: auto; 
-    margin-right: auto;
+/*  margin-left: auto; 
+    margin-right: auto; */
     height: auto;
+    padding: 10px;
     width: 15%;
 }
 /* #title {
@@ -28,23 +29,25 @@ header {
 nav { 
     background-color: darkslategray;
     width: 100%;
+    height: 40px;
     border: 1px solid black;
     width: auto;
     text-align: center;
 }
 ul#topnav li {
+    margin: -30px 20px 20px 20px;
     display: inline-block;
     width: auto;
-    margin: auto;
+    height: auto;
 }
 ul#topnav li a {
     color: black;
-    padding: 1.4vw 10px;
-    font-size: 25px;
+    padding: 1.4vw auto;
+    font-size: 20px;
     text-decoration: none;    
 }
 ul#topnav li a:hover {
-    background-color: lightgrey;
+    color: white;
 }
 main {
     background-color: white;
@@ -54,10 +57,10 @@ main {
     padding-top: -500px;
 
 }
- header h1 {
+header h1 {
     text-align: center; 
 }
-.post {
+article.post {
     background-color: whitesmoke;
     color: black;
     margin: auto;
@@ -65,13 +68,14 @@ main {
     padding: 15px;
     /* border: 1px solid black; */
 }
-.post, p {
-    font: 14px tahoma, sans-serif;
+article.post p {
+    font: 14px verdana, sans-serif;
     padding-left: 15px;
     padding-right: 15px;
+    line-height: 150%;
 }
-.post img {
-    display:block;
+article.post img {
+    display: block;
     width: 95%;
     height: auto;
     margin-left: auto;
@@ -83,7 +87,7 @@ hr.hrtb {
 p.postfoot {
     font-style: italic;
 }
-footer p {
+footer > p {
     font: bold 14px courier, sans-serif;
     padding: 15px;
 }
