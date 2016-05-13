@@ -61,14 +61,14 @@ header {
     font-family: 'TravelingTypewriter';
 }
 #site-nav li a:hover {
-    background-color: #3D9BE9;
+    background-color: #276BA5;
     color: #333333;
 }
 main {
     padding-bottom: 25px;
 }
 #content {
-    background-color: #3D9BE9;
+    background-color: #276BA5;
     color: #333333;
     width: 80%;
     margin: auto;
@@ -77,7 +77,7 @@ main {
 }
 #img {
     display: inline-block;
-    margin: 19px;
+    margin: 20px;
     width: 180px;
     height: 180px;
 	border-radius: 90px;
