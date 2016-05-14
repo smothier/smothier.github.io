@@ -35,25 +35,30 @@ header {
     padding: 0;
 }
 #title p {
+    color: #8B0000; 
+    font: normal 26px droid-serif; color: #8B0000;"
     display: inline-block;
     font: 23px;
     padding: 0;
 }
 #site-nav {
-    float: right;
-    padding: 0;
-    text-align: center;
-    vertical-align: middle;
     display: inline;
+    float: left;
+    padding: 20px;
+    margin: auto;
 }
+#site-nav ul {
+    margin: auto;
+    padding: 0;
+}
+/* FIND A WAY TO GET TO GO UP WHEN BROWSER WINDOW RESIZED */
 #site-nav li {
-    display: inline-block;
-    text-align: center; 
-    margin: 6px;
+    float: none;
+    display: inline-block; 
+    margin: 5px;
 }
 #site-nav li a {
-    display: inline-block;
-    float: right;
+    display: block;
     background-color: #333333;
     color: white;
     padding: 15px 30px;
@@ -78,6 +83,7 @@ main {
 }
 #img {
     display: inline-block;
+    float: left;
     margin: 20px;
     width: 180px;
     height: 180px;
@@ -153,8 +159,8 @@ footer {
     margin: auto;
     padding: 0;
     background-image: linear-gradient(to bottom, #B24242, #8A0000);
-    border-top: 1px solid #FFEBAA;
-    border-bottom: 1px solid #FFEBAA;
+    border-top: 1px solid #FFEECC;
+    border-bottom: 1px solid #FFEECC;
     height: 70px;
     padding: 25px;
 }
@@ -169,4 +175,60 @@ footer {
     vertical-align: middle;
     display: inline;
     font: normal 12px sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        height: 380px;
+    }
+    #title {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        padding: 0px;
+    }
+    #title h1 {
+        font-size: 34px;
+    }
+    #title p {
+        font-size: 23px;
+    }
+    #site-nav {
+        text-align: center;
+        display: block;
+        margin: auto;
+        width: auto;
+        padding: 0px;
+    }
+    #site-nav li {
+        display: inline-block;
+        padding: 0;
+    }
+    #site-nav li a {
+        display: block;
+        width: 200px;
+        margin: auto;
+    }
+    #img {
+        float: none;
+        display: block;
+        margin: auto;
+    }
+    #text {
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 90%;
+    }
+    #footer-center {
+        height: 120px;
+    }
+    #footer-text p{
+        display: inline-block;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        font-size: 12px;
+        text-align: center;
+    }
 }
