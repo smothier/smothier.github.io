@@ -9,40 +9,41 @@ header {
     width: auto;
     margin: 0px;
     background: rgba(255,255,255,0.5);
-    height: 140px;
+    height: 160px;
 } 
 #header-center {
-    width: 83%;
+    width: 80%;
     margin: auto;
     height: auto;
     padding: 5px;
 }
 #title {
+    float: left;
     display: inline-block;
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
     width: auto;
     text-decoration: none;
     line-height: 0px;
-    vertical-align: middle;
+    vertical-align: top;
 }
 #title h1 {
-    display: block;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: -25px;
     font: bold 46px 'TravelingTypewriter';
     padding: 0;
-    line-height: 0px;
 }
-#title h2 {
-    display: block;
+#title p {
+    display: inline-block;
     font: 23px;
-    line-height: 0px;
     padding: 0;
 }
 #site-nav {
     float: right;
     padding: 0;
     text-align: center;
-    vertical-align: top;
+    vertical-align: middle;
     display: inline;
 }
 #site-nav li {
@@ -62,7 +63,7 @@ header {
 }
 #site-nav li a:hover {
     background-color: #276BA5;
-    color: #333333;
+    color: black;
 }
 main {
     padding-bottom: 25px;
@@ -93,6 +94,12 @@ main {
     display: inline-block;
     vertical-align: top;
     margin-left: 30px;
+    line-height: 0px;
+}
+#text h1 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding: 0;
 }
 #box {
     height: 180px;
@@ -139,25 +146,27 @@ p.postfoot {
 } 
 */
 footer {
+   height: 170px;
+}
+#footer-center {
     width: auto;
     margin: auto;
     padding: 0;
     background-image: linear-gradient(to bottom, #B24242, #8A0000);
     border-top: 1px solid #FFEBAA;
     border-bottom: 1px solid #FFEBAA;
-    height: 100px;
+    height: 70px;
     padding: 25px;
 }
-#footer-center {
+#footer-text {
     width: 80%;
     margin: auto;
-    height: auto;
-    padding: 5px;
+    padding: 0;
 }
-#footer-center p {
+#footer-text p {
     color: #B3D7ED;
     float: right;
-    display: inline-block;
-    width: auto;
+    vertical-align: middle;
+    display: inline;
     font: normal 12px sans-serif;
 }
