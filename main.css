@@ -12,7 +12,7 @@ header {
     height: 160px;
 } 
 #header-center {
-    width: 80%;
+    width: 100%;
     margin: auto;
     height: auto;
     padding: 5px;
@@ -21,7 +21,7 @@ header {
     float: left;
     display: inline-block;
     margin: 0;
-    padding: 0;
+    padding-left: 90px;
     width: auto;
     text-decoration: none;
     line-height: 0px;
@@ -39,13 +39,14 @@ header {
     font: normal 26px droid-serif; color: #8B0000;"
     display: inline-block;
     font: 23px;
-    padding: 0;
+    padding: 0px;
 }
 #site-nav {
-    display: inline;
-    float: left;
-    padding: 20px;
+    display: inline-block;
+    padding-top: 30px;
+    padding-left: 10px;
     margin: auto;
+    overflow: auto;
 }
 #site-nav ul {
     margin: auto;
@@ -53,12 +54,11 @@ header {
 }
 /* FIND A WAY TO GET TO GO UP WHEN BROWSER WINDOW RESIZED */
 #site-nav li {
-    float: none;
-    display: inline-block; 
+    display: inline; /* was inline-block */
     margin: 5px;
 }
 #site-nav li a {
-    display: block;
+    display: inline-block; /* was inline-block */
     background-color: #333333;
     color: white;
     padding: 15px 30px;
@@ -84,6 +84,7 @@ main {
 #img {
     display: inline-block;
     float: left;
+    overflow: auto;
     margin: 20px;
     width: 180px;
     height: 180px;
@@ -98,7 +99,7 @@ main {
 #text {
     width: 70%;
     display: inline-block;
-    vertical-align: top;
+    overflow: auto;
     margin-left: 30px;
     line-height: 0px;
 }
@@ -165,21 +166,53 @@ footer {
     padding: 25px;
 }
 #footer-text {
-    width: 80%;
-    margin: auto;
-    padding: 0;
-}
-#footer-text p {
+    width: 70%;
+    margin: 0 auto;
     color: #B3D7ED;
-    float: right;
-    vertical-align: middle;
-    display: inline;
-    font: normal 12px sans-serif;
+    font: normal 13px sans-serif;
+    overflow: auto;
+    display: block;
 }
+#footer-text p img {
+    display: inline;
+}
+#footer-text img {
+    display: inline;
+    float: left;
+    clear: left;
+    margin-left: 10px;
+}
+/* p#copyright-foot {
+    float: right;
+    display: inline;
+}
+p#copyright-foot img {
+    padding-left: 5px;
+    height: 45px;
+    float: left; 
+    display: block;
+    clear: left;
+    overflow: auto;
+}
+#contact-foot {
+    float: left;
+    display: inline;
+}
+#contact-foot img {
+    height: 40px;
+    float: left;
+    display: block;
+    clear: left;
+    overflow: auto;
+} */
 
 @media only screen and (max-width: 768px) {
     header {
-        height: 380px;
+        height: 350px;
+    }
+    #header-center {
+        width: 80%;
+        margin: auto;
     }
     #title {
         text-align: center;
@@ -189,24 +222,30 @@ footer {
     }
     #title h1 {
         font-size: 34px;
+        margin: auto;
+        width: 100%;
+        padding: 5px;
     }
     #title p {
-        font-size: 23px;
+        font-size: 20px;
+        margin: auto;
+        width: 100%;
+        padding: 5px;
     }
     #site-nav {
         text-align: center;
-        display: block;
         margin: auto;
         width: auto;
-        padding: 0px;
+        padding-top: 5px;
     }
     #site-nav li {
         display: inline-block;
-        padding: 0;
+        padding: auto;
     }
     #site-nav li a {
-        display: block;
-        width: 200px;
+        display: inline-block;
+        width: 220px;
+        text-align: center;
         margin: auto;
     }
     #img {
@@ -223,12 +262,19 @@ footer {
     #footer-center {
         height: 120px;
     }
-    #footer-text p{
+    #footer-text{
+        display: block;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+    #footer-text div{
+        float: none;
         display: inline-block;
         width: 100%;
-        margin: auto;
         padding: 0;
-        font-size: 12px;
-        text-align: center;
     }
+    #footer-text div p {
+        display: inline-block;
+        margin: 0;
 }
